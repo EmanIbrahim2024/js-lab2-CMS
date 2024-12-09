@@ -61,8 +61,9 @@ dateDay.innerText=`today is ${dateToday.getDate()}`
 infoContainer.appendChild(dateDay);
 
 let dateMonth=document.createElement('p');
-dateMonth.innerText=`We are in month ${dateToday.getMonth()}`
+dateMonth.innerText=`We are in month ${dateToday.getMonth()+1}`
 infoContainer.appendChild(dateMonth);
+
 
 
 console.log(`Welcome dear guest ${userName}`);
@@ -70,7 +71,7 @@ console.log(`Your Telehone number is  ${userphone}`)
 console.log(`Your Mobile number is  ${userMobilephone}`)
 console.log(`Your Email address is  ${userEmail}`)
 console.log(`today is ${dateToday.getDate()}`)
-console.log(`We are in month ${dateToday.getMonth()}`)
+console.log(`We are in month ${dateToday.getMonth()+1}`)
 
 
 /////////////////////////ex2////////////////////
@@ -85,10 +86,9 @@ function checkletter (userInputString){
     let convertString=userInputString.split(" ");
 
     console.log(convertString);
-
     for (let i=0;i<convertString.length;i++){
         console.log(convertString[i].length)
-        //max=convertString.find((str) => str.length > max.length);
+        
         if(convertString[i].length>max.length)
         max=convertString[i]
 
@@ -99,7 +99,7 @@ function checkletter (userInputString){
 
 }
 
-/////////////////ex3///////////////
+///////////////ex3///////////////
 
 let numericArray= [];
 for(let i=0;i<5;i++){
